@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EAN13BarCodeMaker.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    EAN13BarCodeMaker *maker = [[EAN13BarCodeMaker alloc]init];
+    //generate 12 numbers long NSString
+    //生成12位随机数
+    NSMutableString *str = [[NSMutableString alloc]init];
+    for (int i = 0 ; i < 12 ; i ++ ) {
+        [str appendString:[NSString stringWithFormat:@"%u",arc4random()%10]];
+    }
+    //generate bar code
+    //生成条形码
+    UIView *barCodeView = [maker generateEAN13BarCodeWithString:str Size:CGSizeMake(200, 100)];
+    barCodeView.frame = CGRectMake(100, 100, 200, 100);
+    [self.view addSubview:barCodeView];
 }
 
 @end

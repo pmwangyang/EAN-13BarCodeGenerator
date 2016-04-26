@@ -15,6 +15,7 @@
 		D3300F511CCF15C100434B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3300F4F1CCF15C100434B9A /* LaunchScreen.storyboard */; };
 		D3300F5C1CCF15C100434B9A /* GenerateEAN_13BarCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3300F5B1CCF15C100434B9A /* GenerateEAN_13BarCodeTests.m */; };
 		D3300F671CCF15C100434B9A /* GenerateEAN_13BarCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3300F661CCF15C100434B9A /* GenerateEAN_13BarCodeUITests.m */; };
+		D3300F771CCF15EB00434B9A /* EAN13BarCodeMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3300F761CCF15EB00434B9A /* EAN13BarCodeMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D3300F621CCF15C100434B9A /* GenerateEAN-13BarCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GenerateEAN-13BarCodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3300F661CCF15C100434B9A /* GenerateEAN_13BarCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateEAN_13BarCodeUITests.m; sourceTree = "<group>"; };
 		D3300F681CCF15C100434B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3300F751CCF15EB00434B9A /* EAN13BarCodeMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAN13BarCodeMaker.h; sourceTree = "<group>"; };
+		D3300F761CCF15EB00434B9A /* EAN13BarCodeMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAN13BarCodeMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				D3300F451CCF15C000434B9A /* AppDelegate.m */,
 				D3300F471CCF15C000434B9A /* ViewController.h */,
 				D3300F481CCF15C000434B9A /* ViewController.m */,
+				D3300F751CCF15EB00434B9A /* EAN13BarCodeMaker.h */,
+				D3300F761CCF15EB00434B9A /* EAN13BarCodeMaker.m */,
 				D3300F4A1CCF15C000434B9A /* Main.storyboard */,
 				D3300F4D1CCF15C100434B9A /* Assets.xcassets */,
 				D3300F4F1CCF15C100434B9A /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				D3300F491CCF15C000434B9A /* ViewController.m in Sources */,
 				D3300F461CCF15C000434B9A /* AppDelegate.m in Sources */,
+				D3300F771CCF15EB00434B9A /* EAN13BarCodeMaker.m in Sources */,
 				D3300F431CCF15C000434B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
