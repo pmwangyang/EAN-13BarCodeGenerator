@@ -1,4 +1,4 @@
-# GenerateEAN-13BarCode
+# EAN-13BarCodeGenerator
 One day,I need to generate EAN-13 bar code in my app. 
 I tryed to pod "ZXing" for several times but all failed. 
 And I think "ZXing" is too big for my tiny app. 
